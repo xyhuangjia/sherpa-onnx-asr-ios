@@ -1,23 +1,8 @@
 # SherpaOnnxASR
 
-Speech recognition library based on sherpa-onnx for iOS.
+Speech recognition library based on sherpa-onnx for iOS (device only).
 
 ## Installation
-
-### Swift Package Manager
-
-Add the following to your `Package.swift`:
-
-```swift
-dependencies: [
-    .package(url: "https://github.com/xyhuangjia/sherpa-onnx-asr-ios.git", from: "1.0.0")
-]
-```
-
-Or in Xcode:
-1. File > Add Packages...
-2. Enter: `https://github.com/xyhuangjia/sherpa-onnx-asr-ios.git`
-3. Select version and add
 
 ### CocoaPods
 
@@ -31,6 +16,14 @@ Then run:
 ```bash
 pod install
 ```
+
+### Manual
+
+Download the xcframeworks and add them to your Xcode project:
+- `Sources/sherpa-onnx.xcframework`
+- `Sources/onnxruntime.xcframework`
+
+> **Note**: Swift Package Manager is not supported because these frameworks contain static libraries (.a files), which SPM's binaryTarget does not support.
 
 ## Usage
 

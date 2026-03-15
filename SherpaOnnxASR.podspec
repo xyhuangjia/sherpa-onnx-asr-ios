@@ -14,8 +14,8 @@ Includes sherpa-onnx and onnxruntime frameworks.
   s.ios.deployment_target = '12.0'
   
   s.vendored_frameworks = 
-    'Sources/SherpaOnnxASR/SherpaOnnxASR.xcframework',
-    'Sources/SherpaOnnxASR/onnxruntime.xcframework'
+    'Sources/sherpa-onnx.xcframework',
+    'Sources/onnxruntime.xcframework'
   
   s.pod_target_xcconfig = {
     'OTHER_LDFLAGS' => '-lc++ -lz',
